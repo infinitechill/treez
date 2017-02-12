@@ -1,0 +1,41 @@
+  %{----------------------------------------------------------------------------+
+   | TREEZ                                                                      |
+   | Version: 1.0                                                               |
+   | File:                         ~/apps/treez/treez.sh                        |
+   |                                                                            |
+   | treez.sh                                                                   |
+   | -------------------------------------------------                          |
+   |   this tiny bash script prints an ascii tree representation of a directory |
+   |   structure. if a directory is given as an input, input directory is used. |
+   |   else, current directory is displayed in its tree representation.         |
+   |                                                                            |
+   | Setup:                                                                     |
+   |                                                                            |
+   |   $ mkdir -p ~/apps/treez                                                  |
+   |   $ cd treez (the directory this file is in)                               |
+   |   $ cp -r * ~/apps/treez                                                   |
+   |   $ cd ~/apps/treez                                                        |
+   |   $ chmod a+x treez.sh                                                     |
+   |   $ ln -s ~/apps/treez/treez.sh  /usr/local/bin/treez                      |
+   |   $ echo "PATH=/usr/local/bin/:\${PATH}" >> ~/.bash_profile                |
+   |                                                                            |
+   | Uninstall:                                                                 |
+   |                                                                            |
+   |   $ rm -r ~/apps/treez                                                     |
+   |   $ rm /usr/local/bin/treez                                                |
+   |                                                                            |
+   | Usage:                                                                     |
+   |                                                                            |
+   |   $ treez [directory]*                                                     |
+   |   # * optional                                                             |
+   |                                                                            |
+   | Examples:                                                                  |
+   |                                                                            |
+   |   # example 1                                                              |
+   |   $ treez ~/Desktop/MyFolder                                               |
+   |   # example 2                                                              |
+   |   $ treez                                                                  |
+   |                                                                            |
+   | Public Domain Software -- Free to Use as You Like                          |
+   | infinitechill.net - By J. Volmer                                           |
+   +----------------------------------------------------------------------------%}
